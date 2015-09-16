@@ -11,36 +11,50 @@
         android:src="@drawable/g5939"
         android:id="@+id/themeIcon"
         android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:visibility="invisible"
+        android:id="@+id/loginERROR"
+        android:layout_above="@+id/passwordPrompt"
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/themeIcon"
-        android:layout_centerHorizontal="true">
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@id/themeIcon"
+        android:id="@+id/passwordPrompt">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/passLabel"
+            android:id="@+id/passwordLabel"
+            android:layout_weight=".5" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/passLabel"
-                android:id="@+id/passwordLabel"
-                android:layout_weight=".5" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/editText"
-                android:layout_weight=".5"
-                android:visibility="visible" />
-        </LinearLayout>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordInput"
+            android:layout_weight=".5" />
     </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finishbutton"
+        android:layout_below="@id/passwordPrompt"
+        android:id="@+id/finish"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
