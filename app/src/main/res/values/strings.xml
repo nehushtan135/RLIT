@@ -6,4 +6,6 @@
     <string name="passLabel">Password:</string>
     <string name="error_string">Error String!</string>
     <string name="finishbutton">Finish</string>
+    <string name="title_activity_homepage">HomepageActivity</string>
+    <string name="greetingString">Welcome to R.L.I.T!</string>
 </resources>
