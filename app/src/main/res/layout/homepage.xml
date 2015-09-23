@@ -4,7 +4,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.elijahvarga.rlit.HomepageActivity">
+    tools:context="com.example.elijahvarga.rlit.HomepageActivity"
+    android:gravity="center_horizontal">
 
     <TextView android:text="@string/greetingString" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,17 +23,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/mainNavigation"
-            android:columnCount="2">
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/imageButton" />
+            android:columnCount="2"
+            android:rowCount="1"
+            android:nestedScrollingEnabled="false"
+            android:useDefaultMargins="true">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton2" />
+                android:id="@+id/daybdayButton"
+                android:src="@drawable/calicon"
+                android:layout_columnWeight=".5" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prayerHelpButton"
+                android:src="@drawable/prayinghands"
+                android:layout_columnWeight=".5" />
         </GridLayout>
     </ScrollView>
 
