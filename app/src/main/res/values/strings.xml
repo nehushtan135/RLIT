@@ -8,4 +8,5 @@
     <string name="finishbutton">Finish</string>
     <string name="title_activity_homepage">HomepageActivity</string>
     <string name="greetingString">Welcome to R.L.I.T!</string>
+    <string name="title_activity_day_by_day">dayByDay</string>
 </resources>

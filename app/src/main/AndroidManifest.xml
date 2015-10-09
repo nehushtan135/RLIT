@@ -20,6 +20,14 @@
             android:name=".HomepageActivity"
             android:label="@string/title_activity_homepage" >
         </activity>
+        <activity
+            android:name=".dayByDay"
+            android:label="@string/title_activity_day_by_day"
+            android:parentActivityName=".HomepageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.elijahvarga.rlit.HomepageActivity" />
+        </activity>
     </application>
 
 </manifest>
