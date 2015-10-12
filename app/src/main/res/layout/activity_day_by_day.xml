@@ -6,13 +6,18 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.elijahvarga.rlit.dayByDay">
 
-    <com.example.elijahvarga.rlit.rlitCalenderView
+    <com.example.elijahvarga.rlit.rlitCalendarView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/calendarView"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </com.example.elijahvarga.rlit.rlitCalendarView>
+
 
     <GridLayout
         android:layout_width="match_parent"
@@ -40,5 +45,7 @@
             android:layout_rowWeight=".5"
             android:background="#ff0e0e" />
     </GridLayout>
+
+
 
 </RelativeLayout>

@@ -7,6 +7,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashSet;
 
 public class dayByDay extends AppCompatActivity {
 
@@ -18,6 +24,20 @@ public class dayByDay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_day_by_day);
         initDayByDay();
+        HashSet<Date> events = new HashSet<>();
+        events.add(new Date());
+
+        rlitCalendarView cv = ((rlitCalendarView)findViewById(R.id.calendarView));
+        cv.updateCalendar(events);
+
+        // assign event handler
+        cv.setEventHandler(new rlitCalendarView.EventHandler() {
+            @Override
+            public void onDayLongPress(Date date) {
+                // show returned day
+                DateFormat df = SimpleDateFormat.getDateInstance();
+            }
+        });
     }
 
     private void initDayByDay() {
