@@ -11,4 +11,6 @@
     <string name="title_activity_day_by_day">dayByDay</string>
     <string name="greenButton">Green Day</string>
     <string name="redDay">Red Day</string>
+    <string name="title_activity_prayer_main">PrayerMain</string>
+    <string name="title_activity_sos_main">sosMain</string>
 </resources>

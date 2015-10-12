@@ -28,6 +28,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.elijahvarga.rlit.HomepageActivity" />
         </activity>
+        <activity
+            android:name=".PrayerMain"
+            android:label="@string/title_activity_prayer_main"
+            android:parentActivityName=".HomepageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.elijahvarga.rlit.HomepageActivity" />
+        </activity>
+        <activity
+            android:name=".sosMain"
+            android:label="@string/title_activity_sos_main"
+            android:parentActivityName=".HomepageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.elijahvarga.rlit.HomepageActivity" />
+        </activity>
     </application>
 
 </manifest>

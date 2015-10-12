@@ -1,16 +1,54 @@
 package com.example.elijahvarga.rlit;
 
+import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class HomepageActivity extends AppCompatActivity {
-
+    private ImageButton dayBydayButton;
+    private ImageButton prayerPage;
+    private ImageButton sosMainButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homepage);
+        homepageInit();
+    }
+
+    private void homepageInit() {
+        dayBydayButton = (ImageButton) findViewById(R.id.daybdayButton);
+        dayBydayButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO: Implement authentication here
+                Intent i = new Intent(getApplicationContext(),dayByDay.class);
+                startActivity(i);
+
+            }
+        });
+        prayerPage = (ImageButton) findViewById(R.id.prayerHelpButton);
+        prayerPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),PrayerMain.class);
+                startActivity(i);
+            }
+        });
+        sosMainButton = (ImageButton) findViewById(R.id.sosMainButton);
+        sosMainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),sosMain.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override

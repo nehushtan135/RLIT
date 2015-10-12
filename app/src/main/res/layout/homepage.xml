@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:id="@+id/mainNavigation"
             android:columnCount="2"
-            android:rowCount="1"
+            android:rowCount="2"
             android:nestedScrollingEnabled="false"
             android:useDefaultMargins="true">
 
@@ -41,6 +41,13 @@
                 android:id="@+id/prayerHelpButton"
                 android:src="@drawable/prayinghands"
                 android:layout_columnWeight=".5" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sosMainButton"
+                android:src="@drawable/helpicon"
+                android:layout_columnWeight=".5"/>
         </GridLayout>
     </ScrollView>
 
