@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/g5939"
+        android:src="@drawable/newrliticon"
         android:id="@+id/themeIcon"
         android:layout_centerHorizontal="true" />
     <TextView
