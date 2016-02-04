@@ -20,7 +20,7 @@ public final class rliteDBHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
+    public void onCreate(SQLiteDatabase db) {//TODO: finish this query!
         db.execSQL("CREATE TABLE" + TABLE_NAME + "(" + COLUMN_NAME_DAY_ID + "INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_NAME_GREEN_OR_RED + ", " + COLUMN_NAME_DESCRIPTION + ")");
 
     }
