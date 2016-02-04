@@ -16,11 +16,12 @@ public final class rliteDBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_NAME_DESCRIPTION = "Description";
 
     public rliteDBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+        super(context, DB_NAME, null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE" + TABLE_NAME + "(" + COLUMN_NAME_DAY_ID + "INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_NAME_GREEN_OR_RED + ", " + COLUMN_NAME_DESCRIPTION + ")");
 
     }
 
